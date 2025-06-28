@@ -2,9 +2,19 @@
 
 import { useLanguage } from "@/components/language-provider"
 import { Phone, Mail, MapPin } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   const { t } = useLanguage()
+
+  const handleScroll = (e, href) => {
+    e.preventDefault();
+    const targetId = href.substring(href.indexOf('#') + 1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer className="bg-[hsl(200,92%,10%)] text-white py-12">
@@ -22,6 +32,10 @@ export default function Footer() {
                 <Phone className="h-4 w-4" />
                 <span className="text-sm">{t("contact.info.phone")}</span>
               </div>
+              <div className="flex items-center space-x-2 text-slate-300">
+                <Phone className="h-4 w-4" />
+                <span className="text-sm">{t("contact.info.phone2")}</span>
+              </div>
             </div>
           </div>
 
@@ -30,32 +44,47 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#home"
-                  className="text-slate-300 hover:text-white transition-colors">
+                <Link
+                  href="/#home"
+                  className="text-slate-300 hover:text-white transition-colors"
+                  onClick={(e) => handleScroll(e, '/#home')}
+                >
                   {t("nav.home")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="text-slate-300 hover:text-white transition-colors">
+                <Link
+                  href="/#about"
+                  className="text-slate-300 hover:text-white transition-colors"
+                  onClick={(e) => handleScroll(e, '/#about')}
+                >
                   {t("nav.about")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#services"
-                  className="text-slate-300 hover:text-white transition-colors">
+                <Link
+                  href="/#services"
+                  className="text-slate-300 hover:text-white transition-colors"
+                  onClick={(e) => handleScroll(e, '/#services')}
+                >
                   {t("nav.services")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  className="text-slate-300 hover:text-white transition-colors">
+                <Link
+                  href="/#contact"
+                  className="text-slate-300 hover:text-white transition-colors"
+                  onClick={(e) => handleScroll(e, '/#contact')}
+                >
                   {t("nav.contact")}
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/impressum"
+                  className="text-slate-300 hover:text-white transition-colors">
+                  {t("impressum.title")}
+                </Link>
               </li>
             </ul>
           </div>
@@ -70,7 +99,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-slate-400" />
-                <span className="text-sm text-slate-300">{t("contact.info.email")}</span>
+                <span className="text-sm text-slate-300">{t("contact.info.email")}
+                </span>
               </div>
             </div>
           </div>

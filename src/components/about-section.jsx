@@ -51,7 +51,7 @@ export default function AboutSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="mb-16">
+        <div id="services" className="mb-16">
           <h3
             className="text-2xl lg:text-3xl font-bold text-slate-900 text-center mb-12">
             {t("about.services.title")}
@@ -81,33 +81,33 @@ export default function AboutSection() {
             <div className="flex items-start space-x-4">
               <div className="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0 mt-1"></div>
               <div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Fresh Perspective</h4>
-                <p className="text-slate-600">New ideas and innovative approaches to customer service challenges</p>
+                <h4 className="text-lg font-semibold text-slate-900 mb-2">{t("about.features.freshPerspective.title")}</h4>
+                <p className="text-slate-600">{t("about.features.freshPerspective.desc")}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0 mt-1"></div>
               <div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Personal Attention</h4>
-                <p className="text-slate-600">Small team means every client gets dedicated, personalized service</p>
+                <h4 className="text-lg font-semibold text-slate-900 mb-2">{t("about.features.personalAttention.title")}</h4>
+                <p className="text-slate-600">{t("about.features.personalAttention.desc")}</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0 mt-1"></div>
               <div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Agile & Flexible</h4>
-                <p className="text-slate-600">Quick to adapt and customize solutions for your specific needs</p>
+                <h4 className="text-lg font-semibold text-slate-900 mb-2">{t("about.features.agileFlexible.title")}</h4>
+                <p className="text-slate-600">{t("about.features.agileFlexible.desc")}</p>
               </div>
             </div>
           </div>
           <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 mb-2">5</div>
-              <div className="text-slate-600 mb-6">Passionate Team Members</div>
+              <div className="text-sm text-slate-600">{t("about.stats.teamMembers")}</div>
               <div className="text-4xl font-bold text-blue-600 mb-2">2025</div>
-              <div className="text-slate-600 mb-6">Year We Started</div>
+              <div className="text-slate-600 mb-6">{t("about.stats.yearStarted")}</div>
               <div className="text-4xl font-bold text-blue-600 mb-2">∞</div>
-              <div className="text-slate-600">Growth Potential</div>
+              <div className="text-slate-600">{t("about.stats.growthPotential")}</div>
             </div>
           </div>
         </div>

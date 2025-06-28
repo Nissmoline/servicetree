@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+*.log
+*.tgz
 
 # debug
 npm-debug.log*
@@ -39,3 +41,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/        # VS Code
+.idea/          # IntelliJ IDEA
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+

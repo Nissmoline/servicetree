@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { Menu, X, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/components/language-provider";
@@ -19,45 +20,61 @@ export default function Header() {
 
   const currentLanguage = languages.find((lang) => lang.code === language)
 
+  const handleScroll = (e, href) => {
+    e.preventDefault();
+    const targetId = href.substring(href.indexOf('#') + 1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Close mobile menu after click
+  };
+
   return (
     <header className="bg-[hsl(200,92%,10%)] shadow-lg border-b border-gray-800 sticky top-0 z-50 transform transition-all duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 mt-6">
-            <Image src="/newLogo.svg" alt="Service Tree Logo" width={84} height={22} priority />
+            <Link href="/">
+              <Image src="/newLogo.svg" alt="Service Tree Logo" width={84} height={22} priority />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#home"
+            <Link
+              href="/#home"
               className="group relative text-white hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
+              onClick={(e) => handleScroll(e, '/#home')}
             >
               {t("nav.home")}
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/#about"
               className="group relative text-white hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
+              onClick={(e) => handleScroll(e, '/#about')}
             >
               {t("nav.about")}
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href="/#services"
               className="group relative text-white hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
+              onClick={(e) => handleScroll(e, '/#services')}
             >
               {t("nav.services")}
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/#contact"
               className="group relative text-white hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
+              onClick={(e) => handleScroll(e, '/#contact')}
             >
               {t("nav.contact")}
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-            </a>
+            </Link>
           </nav>
 
           {/* Language Switcher & Mobile Menu */}
@@ -117,7 +134,7 @@ export default function Header() {
           onClick={() => setIsMenuOpen(false)} // Close when clicking outside
         >
           <div
-            className={`fixed top-0 right-0 h-full w-64 bg-[hsl(200,92%,10%)]/75 shadow-lg transform transition-transform duration-300 ease-in-out ${
+            className={`fixed top-0 right-0 h-full w-64 bg-[var(--header-footer-bg)]/75 shadow-lg transform transition-transform duration-300 ease-in-out ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside sidebar
@@ -131,42 +148,42 @@ export default function Header() {
               <X className="h-6 w-6" />
             </Button>
             <nav className="flex flex-col space-y-6 text-center mt-20">
-              <a
-                href="#home"
+              <Link
+                href="/#home"
                 className="group relative text-white hover:text-white px-3 py-2 text-2xl font-bold transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleScroll(e, '/#home')}
               >
                 {t("nav.home")}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                href="/#about"
                 className="group relative text-white hover:text-white px-3 py-2 text-2xl font-bold transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleScroll(e, '/#about')}
               >
                 {t("nav.about")}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                href="/#services"
                 className="group relative text-white hover:text-white px-3 py-2 text-2xl font-bold transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleScroll(e, '/#services')}
               >
                 {t("nav.services")}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/#contact"
                 className="group relative text-white hover:text-white px-3 py-2 text-2xl font-bold transition-all duration-300 ease-in-out rounded-md hover:bg-white/10"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleScroll(e, '/#contact')}
               >
                 {t("nav.contact")}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }

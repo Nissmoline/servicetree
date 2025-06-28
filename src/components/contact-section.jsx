@@ -64,6 +64,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
                     <p className="text-slate-600">{t("contact.info.phone")}</p>
+                    <p className="text-slate-600">{t("contact.info.phone2")}</p>
                   </div>
                 </div>
 
