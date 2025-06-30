@@ -23,7 +23,7 @@ const translations = {
     "about.subtitle": "A New Team with Big Ambitions",
     "about.mission.title": "Our Mission",
     "about.mission.text":
-      "As a newly established consulting firm, we're committed to delivering personalized, high-quality customer service solutions. Our small but passionate team ensures every client receives dedicated attention and innovative approaches to their unique challenges.",
+      "As a newly established company, we're committed to delivering personalized, high-quality customer service solutions. Our small but passionate team ensures every client receives dedicated attention and innovative approaches to their unique challenges.",
     "about.services.title": "Our Core Services",
     "about.services.inbound": "Inbound Support",
     "about.services.inbound.desc": "Personalized customer support with a human touch",
@@ -62,7 +62,7 @@ const translations = {
 
     // Footer
     "footer.rights": "© 2025 Service Tree Consulting. Built with passion by our team of 5.",
-    "footer.companyDescription": "A fresh new consulting firm specializing in customer service excellence. Our team of 5 dedicated professionals is ready to help your business grow with personalized attention and innovative solutions.",
+    "footer.companyDescription": "A fresh new Company specializing in customer service excellence. Our team of 5 dedicated professionals is ready to help your business grow with personalized attention and innovative solutions.",
 
     // Cookie Consent
     "cookie.message": "We use cookies to ensure you get the best experience on our website. By continuing to use this site, you agree to our use of cookies.",
@@ -103,7 +103,7 @@ const translations = {
     "hero.title": "Service Tree Consulting",
     "hero.tagline": "Frischer Ansatz für Kundenservice-Exzellenz",
     "hero.description":
-      "Wir sind ein dynamisches neues Team von 5 engagierten Fachkräften, die frische Energie und innovative Lösungen für Call-Center-Services und Kundensupport bringen.",
+      "Wir sind ein dynamisches neues Team von 5 engagierten Fachkräften, die frische Energie und innovative Lösungen für Vertrieb, Call-Center-Services und Kundensupport bringen.",
     "hero.cta": "Starten Sie Ihre Reise mit uns",
 
     // About Section
@@ -111,7 +111,7 @@ const translations = {
     "about.subtitle": "Ein neues Team mit großen Ambitionen",
     "about.mission.title": "Unsere Mission",
     "about.mission.text":
-      "Als neu gegründetes Beratungsunternehmen sind wir verpflichtet, personalisierte, hochwertige Kundenservice-Lösungen zu liefern. Unser kleines aber leidenschaftliches Team sorgt dafür, dass jeder Kunde dedizierte Aufmerksamkeit und innovative Ansätze für seine einzigartigen Herausforderungen erhält.",
+      "Als neu gegründetes Unternehmen sind wir verpflichtet, personalisierte, hochwertige Kundenservice-Lösungen zu liefern. Unser kleines aber leidenschaftliches Team sorgt dafür, dass jeder Kunde dedizierte Aufmerksamkeit und innovative Ansätze für seine einzigartigen Herausforderungen erhält.",
     "about.services.title": "Unsere Kerndienstleistungen",
     "about.services.inbound": "Eingehender Support",
     "about.services.inbound.desc": "Personalisierter Kundensupport mit menschlicher Note",
@@ -149,7 +149,7 @@ const translations = {
 
     // Footer
     "footer.rights": "© 2025 Service Tree Consulting. Mit Leidenschaft von unserem 5-köpfigen Team erstellt.",
-    "footer.companyDescription": "Eine frische neue Beratungsfirma, spezialisiert auf exzellenten Kundenservice. Unser Team von 5 engagierten Fachleuten ist bereit, Ihrem Unternehmen mit persönlicher Betreuung und innovativen Lösungen zum Wachstum zu verhelfen.",
+    "footer.companyDescription": "Eine frisches neues Unternehmen, spezialisiert auf exzellenten Kundenservice. Unser Team von 5 engagierten Fachleuten ist bereit, Ihrem Unternehmen mit persönlicher Betreuung und innovativen Lösungen zum Wachstum zu verhelfen.",
 
     // Cookie Consent
     "cookie.message": "Wir verwenden Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten. Durch die weitere Nutzung dieser Website stimmen Sie unserer Verwendung von Cookies zu.",
@@ -197,7 +197,7 @@ const translations = {
     "about.subtitle": "Μια Νέα Ομάδα με Μεγάλες Φιλοδοξίες",
     "about.mission.title": "Η Αποστολή μας",
     "about.mission.text":
-      "Ως νεοσύστατη εταιρεία συμβούλων, είμαστε αφοσιωμένοι στην παροχή εξατομικευμένων, υψηλής ποιότητας λύσεων εξυπηρέτησης πελατών. Η μικρή αλλά παθιασμένη ομάδα μας διασφαλίζει ότι κάθε πελάτης λαμβάνει αφοσιωμένη προσοχή και καινοτόμες προσεγγίσεις για τις μοναδικές του προκλήσεις.",
+      "Ως νεοσύστατη εταιρεία, είμαστε αφοσιωμένοι στην παροχή εξατομικευμένων, υψηλής ποιότητας λύσεων εξυπηρέτησης πελατών. Η μικρή αλλά παθιασμένη ομάδα μας διασφαλίζει ότι κάθε πελάτης λαμβάνει αφοσιωμένη προσοχή και καινοτόμες προσεγγίσεις για τις μοναδικές του προκλήσεις.",
     "about.services.title": "Οι Βασικές μας Υπηρεσίες",
     "about.services.inbound": "Εισερχόμενη Υποστήριξη",
     "about.services.inbound.desc": "Εξατομικευμένη υποστήριξη πελατών με ανθρώπινη προσέγγιση",
@@ -235,7 +235,7 @@ const translations = {
 
     // Footer
     "footer.rights": "© 2025 Service Tree Consulting. Δημιουργήθηκε με πάθος από την ομάδα των 5 ατόμων μας.",
-    "footer.companyDescription": "Μια νέα εταιρεία συμβούλων που ειδικεύεται στην αριστεία εξυπηρέτησης πελατών. Η ομάδα μας από 5 αφοσιωμένους επαγγελματίες είναι έτοιμη να βοηθήσει την επιχείρησή σας να αναπτυχθεί με εξατομικευμένη προσοχή και καινοτόμες λύσεις.",
+    "footer.companyDescription": "Μια νέα εταιρεία που ειδικεύεται στην αριστεία εξυπηρέτησης πελατών. Η ομάδα μας από 5 αφοσιωμένους επαγγελματίες είναι έτοιμη να βοηθήσει την επιχείρησή σας να αναπτυχθεί με εξατομικευμένη προσοχή και καινοτόμες λύσεις.",
 
     // Cookie Consent
     "cookie.message": "Χρησιμοποιούμε cookies για να διασφαλίσουμε ότι θα έχετε την καλύτερη εμπειρία στον ιστότοπό μας. Συνεχίζοντας να χρησιμοποιείτε αυτόν τον ιστότοπο, συμφωνείτε με τη χρήση των cookies.",

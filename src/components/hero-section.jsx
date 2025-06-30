@@ -98,17 +98,17 @@ export default function HeroSection() {
               <div className="bg-white rounded-xl p-6 space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-sm font-medium text-slate-700">Live Call Center</span>
+                  <span className="text-sm font-medium text-slate-700">Service Tree</span>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                     <span className="text-sm text-slate-600">Team Members</span>
                     <span className="font-semibold text-slate-900">5</span>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                  {/* <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                     <span className="text-sm text-slate-600">Projects Started</span>
                     <span className="font-semibold text-slate-900">2</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                     <span className="text-sm text-slate-600">Client Satisfaction</span>
                     <span className="font-semibold text-green-700">100%</span>
