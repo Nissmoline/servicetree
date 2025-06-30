@@ -83,19 +83,19 @@ export default function ContactSection() {
 
             {/* Business Hours */}
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h4 className="font-semibold text-slate-900 mb-4">Availability</h4>
+              <h4 className="font-semibold text-slate-900 mb-4">{t("contact.availability.title")}</h4>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-slate-600">Monday - Friday</span>
-                  <span className="text-slate-900">9:00 AM - 6:00 PM</span>
+                  <span className="text-slate-600">{t("contact.availability.mondayFriday")}</span>
+                  <span className="text-slate-900">{t("contact.availability.hours")}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-600">Response Time</span>
-                  <span className="text-slate-900">Within 24 hours</span>
+                  <span className="text-slate-600">{t("contact.availability.responseTime")}</span>
+                  <span className="text-slate-900">{t("contact.availability.within24Hours")}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-600">Emergency Support</span>
-                  <span className="text-slate-900">By appointment</span>
+                  <span className="text-slate-600">{t("contact.availability.emergencySupport")}</span>
+                  <span className="text-slate-900">{t("contact.availability.byAppointment")}</span>
                 </div>
               </div>
             </div>

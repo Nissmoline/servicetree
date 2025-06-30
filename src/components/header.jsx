@@ -7,6 +7,7 @@ import { Menu, X, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/components/language-provider";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { handleScroll } from "@/lib/utils";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,16 +20,6 @@ export default function Header() {
   ]
 
   const currentLanguage = languages.find((lang) => lang.code === language)
-
-  const handleScroll = (e, href) => {
-    e.preventDefault();
-    const targetId = href.substring(href.indexOf('#') + 1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false); // Close mobile menu after click
-  };
 
   return (
     <header className="bg-[hsl(200,92%,10%)] shadow-lg border-b border-gray-800 sticky top-0 z-50 transform transition-all duration-300 ease-in-out">

@@ -24,8 +24,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Service Tree Consulting</h3>
             <p className="text-slate-300 mb-6 max-w-md">
-              A fresh new consulting firm specializing in customer service excellence. Our team of 5 dedicated
-              professionals is ready to help your business grow with personalized attention and innovative solutions.
+              {t("footer.companyDescription")}
             </p>
             <div className="flex space-x-4">
               <div className="flex items-center space-x-2 text-slate-300">

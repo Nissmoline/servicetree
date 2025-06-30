@@ -49,9 +49,10 @@ const translations = {
     "contact.subtitle": "Ready to work with a fresh, dedicated team? We'd love to hear from you.",
     "contact.info.title": "Get In Touch",
     "contact.info.address": "Remote-First Team • Available Worldwide",
+    "contact.info.address2": "Remote-First Team • Available Worldwide",
     "contact.info.phone": "+30 697 455 8066",
     "contact.info.phone2": "+30 697 385 8321",
-    "contact.info.email": "hello@servicetreeconsulting.com",
+    "contact.info.email": "info@servicetreeconsulting.com",
     "contact.form.title": "Tell Us About Your Project",
     "contact.form.name": "Your Name",
     "contact.form.email": "Email Address",
@@ -60,7 +61,8 @@ const translations = {
     "contact.form.submit": "Let's Connect",
 
     // Footer
-    "footer.rights": "© 2024 Service Tree Consulting. Built with passion by our team of 5.",
+    "footer.rights": "© 2025 Service Tree Consulting. Built with passion by our team of 5.",
+    "footer.companyDescription": "A fresh new consulting firm specializing in customer service excellence. Our team of 5 dedicated professionals is ready to help your business grow with personalized attention and innovative solutions.",
 
     // Cookie Consent
     "cookie.message": "We use cookies to ensure you get the best experience on our website. By continuing to use this site, you agree to our use of cookies.",
@@ -75,11 +77,20 @@ const translations = {
     "impressum.contact.title": "Contact",
     "impressum.contact.phone": "Phone: +30 697 455 8066, +30 697 385 8321 ",
     
-    "impressum.contact.email": "Email: hello@servicetreeconsulting.com",
+    "impressum.contact.email": "Email: info@servicetreeconsulting.com",
     "impressum.disclaimer.title": "Disclaimer",
     "impressum.disclaimer.content": "The content of our pages has been created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general laws. However, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected by this. Liability in this regard is only possible from the point in time at which knowledge of a specific legal infringement is obtained. As soon as we become aware of such legal infringements, we will remove this content immediately.",
     "impressum.dataProtection.title": "Data Protection",
     "impressum.dataProtection.content": "The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent. We would like to point out that data transmission over the Internet (e.g. when communicating by e-mail) can have security gaps. Complete protection of data against access by third parties is not possible. The use of contact data published within the framework of the imprint obligation by third parties for sending unsolicited advertising and information materials is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam e-mails.",
+
+    // Contact Availability
+    "contact.availability.title": "Availability",
+    "contact.availability.mondayFriday": "Monday - Friday",
+    "contact.availability.hours": "9:00 AM - 6:00 PM",
+    "contact.availability.responseTime": "Response Time",
+    "contact.availability.within24Hours": "Within 24 hours",
+    "contact.availability.emergencySupport": "Emergency Support",
+    "contact.availability.byAppointment": "By appointment",
   },
   de: {
     // Header
@@ -137,7 +148,8 @@ const translations = {
     "contact.form.submit": "Lassen Sie uns verbinden",
 
     // Footer
-    "footer.rights": "© 2024 Service Tree Consulting. Mit Leidenschaft von unserem 5-köpfigen Team erstellt.",
+    "footer.rights": "© 2025 Service Tree Consulting. Mit Leidenschaft von unserem 5-köpfigen Team erstellt.",
+    "footer.companyDescription": "Eine frische neue Beratungsfirma, spezialisiert auf exzellenten Kundenservice. Unser Team von 5 engagierten Fachleuten ist bereit, Ihrem Unternehmen mit persönlicher Betreuung und innovativen Lösungen zum Wachstum zu verhelfen.",
 
     // Cookie Consent
     "cookie.message": "Wir verwenden Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten. Durch die weitere Nutzung dieser Website stimmen Sie unserer Verwendung von Cookies zu.",
@@ -156,6 +168,15 @@ const translations = {
     "impressum.disclaimer.content": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
     "impressum.dataProtection.title": "Datenschutz",
     "impressum.dataProtection.content": "Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.",
+
+    // Contact Availability
+    "contact.availability.title": "Verfügbarkeit",
+    "contact.availability.mondayFriday": "Montag - Freitag",
+    "contact.availability.hours": "9:00 - 18:00 Uhr",
+    "contact.availability.responseTime": "Antwortzeit",
+    "contact.availability.within24Hours": "Innerhalb von 24 Stunden",
+    "contact.availability.emergencySupport": "Notfall-Support",
+    "contact.availability.byAppointment": "Nach Vereinbarung",
   },
   el: {
     // Header
@@ -204,7 +225,7 @@ const translations = {
     "contact.info.address": "Remote-First Ομάδα • Διαθέσιμοι Παγκοσμίως",
     "contact.info.phone": "+30 697 455 8066",
     "contact.info.phone2": "+30 697 385 8321",
-    "contact.info.email": "hello@servicetreeconsulting.com",
+    "contact.info.email": "info@servicetreeconsulting.com",
     "contact.form.title": "Πείτε μας για το Έργο σας",
     "contact.form.name": "Το Όνομά σας",
     "contact.form.email": "Διεύθυνση Email",
@@ -213,7 +234,8 @@ const translations = {
     "contact.form.submit": "Ας Συνδεθούμε",
 
     // Footer
-    "footer.rights": "© 2024 Service Tree Consulting. Δημιουργήθηκε με πάθος από την ομάδα των 5 ατόμων μας.",
+    "footer.rights": "© 2025 Service Tree Consulting. Δημιουργήθηκε με πάθος από την ομάδα των 5 ατόμων μας.",
+    "footer.companyDescription": "Μια νέα εταιρεία συμβούλων που ειδικεύεται στην αριστεία εξυπηρέτησης πελατών. Η ομάδα μας από 5 αφοσιωμένους επαγγελματίες είναι έτοιμη να βοηθήσει την επιχείρησή σας να αναπτυχθεί με εξατομικευμένη προσοχή και καινοτόμες λύσεις.",
 
     // Cookie Consent
     "cookie.message": "Χρησιμοποιούμε cookies για να διασφαλίσουμε ότι θα έχετε την καλύτερη εμπειρία στον ιστότοπό μας. Συνεχίζοντας να χρησιμοποιείτε αυτόν τον ιστότοπο, συμφωνείτε με τη χρήση των cookies.",
@@ -227,13 +249,23 @@ const translations = {
     "impressum.companyInfo.taxId": "ΑΦΜ: Σύντομα",
     "impressum.contact.title": "Επικοινωνία",
     "impressum.contact.phone": "Τηλέφωνο: +30 210 123 4567",
-    "impressum.contact.email": "Email: hello@servicetreeconsulting.com",
+    "impressum.contact.email": "Email: info@servicetreeconsulting.com",
     "impressum.disclaimer.title": "Αποποίηση Ευθύνης",
     "impressum.disclaimer.content": "Το περιεχόμενο των σελίδων μας έχει δημιουργηθεί με τη μέγιστη δυνατή προσοχή. Ωστόσο, δεν μπορούμε να εγγυηθούμε την ακρίβεια, την πληρότητα και την επικαιρότητα του περιεχομένου. Ως πάροχος υπηρεσιών, είμαστε υπεύθυνοι για το δικό μας περιεχόμενο σε αυτές τις σελίδες σύμφωνα με τους γενικούς νόμους. Ωστόσο, δεν είμαστε υποχρεωμένοι να παρακολουθούμε μεταδιδόμενες ή αποθηκευμένες πληροφορίες τρίτων ή να ερευνούμε περιστάσεις που υποδηλώνουν παράνομη δραστηριότητα. Οι υποχρεώσεις για την αφαίρεση ή τον αποκλεισμό της χρήσης πληροφοριών σύμφωνα με τους γενικούς νόμους παραμένουν ανεπηρέαστες από αυτό. Η ευθύνη σε αυτό το πλαίσιο είναι δυνατή μόνο από τη στιγμή που αποκτάται γνώση μιας συγκεκριμένης νομικής παράβασης. Μόλις λάβουμε γνώση τέτοιων νομικών παραβάσεων, θα αφαιρέσουμε αμέσως αυτό το περιεχόμενο.",
     "impressum.dataProtection.title": "Προστασία Δεδομένων",
     "impressum.dataProtection.content": "Η χρήση της ιστοσελίδας μας είναι γενικά δυνατή χωρίς την παροχή προσωπικών δεδομένων. Εφόσον συλλέγονται προσωπικά δεδομένα (π.χ. όνομα, διεύθυνση ή διευθύνσεις ηλεκτρονικού ταχυδρομείου) στις σελίδες μας, αυτό γίνεται πάντα, στο μέτρο του δυνατού, σε εθελοντική βάση. Αυτά τα δεδομένα δεν θα διαβιβαστούν σε τρίτους χωρίς τη ρητή συγκατάθεσή σας. Θα θέλαμε να επισημάνουμε ότι η μετάδοση δεδομένων μέσω του Διαδικτύου (π.χ. κατά την επικοινωνία μέσω ηλεκτρονικού ταχυδρομείου) μπορεί να έχει κενά ασφαλείας. Η πλήρης προστασία των δεδομένων από την πρόσβαση τρίτων δεν είναι δυνατή. Η χρήση των στοιχείων επικοινωνίας που δημοσιεύονται στο πλαίσιο της υποχρέωσης αποτύπωσης από τρίτους για την αποστολή ανεπιθύμητων διαφημιστικών και ενημερωτικών υλικών απαγορεύεται ρητά. Οι διαχειριστές των σελίδων διατηρούν ρητά το δικαίωμα να προβούν σε νομικές ενέργειες σε περίπτωση ανεπιθύμητης αποστολής διαφημιστικών πληροφοριών, όπως μηνύματα spam.",
+
+    // Contact Availability
+    "contact.availability.title": "Διαθεσιμότητα",
+    "contact.availability.mondayFriday": "Δευτέρα - Παρασκευή",
+    "contact.availability.hours": "9:00 π.μ. - 6:00 μ.μ.",
+    "contact.availability.responseTime": "Χρόνος Απόκρισης",
+    "contact.availability.within24Hours": "Εντός 24 ωρών",
+    "contact.availability.emergencySupport": "Υποστήριξη Έκτακτης Ανάγκης",
+    "contact.availability.byAppointment": "Κατόπιν ραντεβού",
   },
 }
+
 
 export function LanguageProvider({
   children
