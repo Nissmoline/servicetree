@@ -98,7 +98,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-slate-400" />
-                <span className="text-sm text-slate-300">{t("contact.info.email")}
+                <span className="text-sm text-slate-300">{t("contact.info.email")}</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 text-slate-400" />
+                <span className="text-sm text-slate-300">{t("contact.info.email2")}
                 </span>
               </div>
             </div>

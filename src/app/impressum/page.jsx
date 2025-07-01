@@ -37,6 +37,9 @@ export default function ImpressumPage() {
             <p>
               {t("impressum.contact.email")}
             </p>
+            <p>
+              {t("impressum.contact.email2")}
+            </p>
           </section>
 
           <section>
