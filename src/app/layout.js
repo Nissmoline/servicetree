@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Service Tree Consulting - Fresh Approach to Customer Service Excellence",
   description: "Service Tree Consulting offers innovative solutions and personalized attention for call center services and customer support. A dynamic team ready to help your business grow.",
+  icons: {
+    icon: '/newLogo.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
