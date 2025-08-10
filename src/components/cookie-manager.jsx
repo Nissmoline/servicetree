@@ -2,20 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Cookie, X, Settings, Shield, Info } from "lucide-react";
+import { Cookie, Settings, X, Shield, Info, Users } from "lucide-react";
 import { useLanguage } from "@/components/language-provider";
 import { 
-  shouldShowConsentBanner, 
-  markConsentBannerShown, 
-  getConsentBannerDelay,
-  saveCookieConsent,
-  COOKIE_TYPES
+  getCookieConsent, 
+  saveCookieConsent, 
+  clearCookieConsent,
+  COOKIE_TYPES 
 } from "@/lib/cookie-utils";
 
-export default function CookieConsent() {
+export default function CookieManager({ isOpen, onClose }) {
   const { t } = useLanguage();
-  const [isVisible, setIsVisible] = useState(false);
-  const [showDetails, setShowDetails] = useState(false);
   const [preferences, setPreferences] = useState({
     necessary: true,
     analytics: false,
@@ -23,75 +20,59 @@ export default function CookieConsent() {
   });
 
   useEffect(() => {
-    // Проверяем, нужно ли показать баннер согласия
-    if (shouldShowConsentBanner()) {
-      // Небольшая задержка для менее агрессивного появления
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-        markConsentBannerShown();
-      }, getConsentBannerDelay());
-
-      return () => clearTimeout(timer);
+    // Загружаем текущие настройки
+    const consent = getCookieConsent();
+    if (consent) {
+      setPreferences({
+        necessary: consent[COOKIE_TYPES.NECESSARY] ?? true,
+        analytics: consent[COOKIE_TYPES.ANALYTICS] ?? false,
+        marketing: consent[COOKIE_TYPES.MARKETING] ?? false
+      });
     }
   }, []);
 
-  const handleAcceptAll = () => {
-    saveCookieConsent({
-      [COOKIE_TYPES.NECESSARY]: true,
-      [COOKIE_TYPES.ANALYTICS]: true,
-      [COOKIE_TYPES.MARKETING]: true
-    });
-    setIsVisible(false);
-  };
-
-  const handleAcceptSelected = () => {
+  const handleSave = () => {
     saveCookieConsent({
       [COOKIE_TYPES.NECESSARY]: preferences.necessary,
       [COOKIE_TYPES.ANALYTICS]: preferences.analytics,
       [COOKIE_TYPES.MARKETING]: preferences.marketing
     });
-    setIsVisible(false);
+    onClose();
   };
 
-  const handleReject = () => {
-    saveCookieConsent({
-      [COOKIE_TYPES.NECESSARY]: true,
-      [COOKIE_TYPES.ANALYTICS]: false,
-      [COOKIE_TYPES.MARKETING]: false
+  const handleReset = () => {
+    clearCookieConsent();
+    setPreferences({
+      necessary: true,
+      analytics: false,
+      marketing: false
     });
-    setIsVisible(false);
   };
 
-  const handleClose = () => {
-    setIsVisible(false);
-  };
-
-  if (!isVisible) {
-    return null;
-  }
+  if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center p-4 bg-black/20 backdrop-blur-sm">
-      <div className="w-full max-w-2xl bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+      <div className="w-full max-w-2xl bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
           <div className="flex items-center space-x-3">
             <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-              <Cookie className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+              <Settings className="h-5 w-5 text-blue-600 dark:text-blue-400" />
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                {t("cookie.title")}
+                {t("cookieManager.title")}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                {t("cookie.subtitle")}
+                {t("cookieManager.subtitle")}
               </p>
             </div>
           </div>
           <Button
             variant="ghost"
             size="sm"
-            onClick={handleClose}
+            onClick={onClose}
             className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
           >
             <X className="h-4 w-4" />
@@ -101,7 +82,7 @@ export default function CookieConsent() {
         {/* Content */}
         <div className="p-6">
           <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-            {t("cookie.description")}
+            {t("cookieManager.description")}
           </p>
 
           {/* Cookie Categories */}
@@ -155,7 +136,7 @@ export default function CookieConsent() {
             {/* Marketing Cookies */}
             <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
               <div className="flex items-center space-x-3">
-                <Settings className="h-4 w-4 text-purple-600 dark:text-purple-400" />
+                <Users className="h-4 w-4 text-purple-600 dark:text-purple-400" />
                 <div>
                   <h4 className="font-medium text-gray-900 dark:text-white">
                     {t("cookie.marketing.title")}
@@ -179,24 +160,24 @@ export default function CookieConsent() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
-              onClick={handleAcceptAll}
+              onClick={handleSave}
               className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
             >
-              {t("cookie.acceptAll")}
+              {t("cookieManager.save")}
             </Button>
             <Button
-              onClick={handleAcceptSelected}
+              onClick={handleReset}
               variant="outline"
               className="flex-1"
             >
-              {t("cookie.acceptSelected")}
+              {t("cookieManager.reset")}
             </Button>
             <Button
-              onClick={handleReject}
+              onClick={onClose}
               variant="ghost"
               className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
             >
-              {t("cookie.reject")}
+              {t("cookieManager.cancel")}
             </Button>
           </div>
 

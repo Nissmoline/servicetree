@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useLanguage } from "@/components/language-provider"
-import { MapPin, Phone, Mail, Send } from "lucide-react"
+import { MapPin, Mail, Send } from "lucide-react"
 
 export default function ContactSection() {
   const { t } = useLanguage()
@@ -58,25 +58,12 @@ export default function ContactSection() {
 
                 <div className="flex items-start space-x-4">
                   <div
-                    className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                    <p className="text-slate-600">{t("contact.info.phone")}</p>
-                    <p className="text-slate-600">{t("contact.info.phone2")}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div
                     className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
                     <p className="text-slate-600">{t("contact.info.email")}</p>
-                    <p className="text-slate-600">{t("contact.info.email2")}</p>
                   </div>
                 </div>
               </div>

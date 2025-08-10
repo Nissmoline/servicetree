@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/language-provider";
 import PageTransition from "@/components/page-transition";
+import { DynamicLangAttribute } from "@/components/dynamic-lang-attribute";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LanguageProvider>
+          <DynamicLangAttribute />
           <PageTransition>{children}</PageTransition>
         </LanguageProvider>
       </body>

@@ -54,3 +54,6 @@ Desktop.ini
 *.sublime-workspace
 *.code-workspace
 
+# Documentation files
+COOKIE_DOCUMENTATION.md
+

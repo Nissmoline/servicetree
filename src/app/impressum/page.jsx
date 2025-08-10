@@ -32,13 +32,7 @@ export default function ImpressumPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">{t("impressum.contact.title")}</h2>
             <p>
-              {t("impressum.contact.phone")}
-            </p>
-            <p>
               {t("impressum.contact.email")}
-            </p>
-            <p>
-              {t("impressum.contact.email2")}
             </p>
           </section>
 

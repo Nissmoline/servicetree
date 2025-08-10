@@ -2,17 +2,14 @@
 
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/components/language-provider"
-import { ArrowRight, Phone, Users, TrendingUp } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { ArrowRight, Users, TrendingUp } from "lucide-react"
+
 import { handleScroll } from "@/lib/utils"
 
 export default function HeroSection() {
   const { t } = useLanguage()
 
-  // Function to extract only digits from phone number string
-  const getPhoneNumberDigits = (phoneString) => {
-    return phoneString ? phoneString.replace(/[^\d+]/g, '') : '';
-  };
+
 
   return (
     <section
@@ -37,32 +34,7 @@ export default function HeroSection() {
                 {t("hero.cta")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="px-8 py-3 text-lg border-slate-300 text-slate-700 hover:bg-slate-50 bg-transparent"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Schedule Call
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="bg-white border-gray-200 shadow-lg">
-                  <DropdownMenuItem>
-                    <a href={`tel:${getPhoneNumberDigits(t("contact.info.phone"))}`} className="flex items-center space-x-2 w-full">
-                      <Phone className="h-4 w-4" />
-                      <span>{t("contact.info.phone")}</span>
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href={`tel:${getPhoneNumberDigits(t("contact.info.phone2"))}`} className="flex items-center space-x-2 w-full">
-                      <Phone className="h-4 w-4" />
-                      <span>{t("contact.info.phone2")}</span>
-                    </a>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+
             </div>
 
             {/* Stats */}
@@ -76,7 +48,7 @@ export default function HeroSection() {
               </div>
               <div className="text-center">
                 <div className="flex justify-center mb-2">
-                  <Phone className="h-8 w-8 text-blue-600" />
+                  <Users className="h-8 w-8 text-blue-600" />
                 </div>
                 <div className="text-2xl font-bold text-slate-900">100%</div>
                 <div className="text-sm text-slate-600">Dedication</div>

@@ -1,11 +1,14 @@
 "use client"
 
+import { useState } from "react"
 import { useLanguage } from "@/components/language-provider"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Mail, MapPin, Settings } from "lucide-react"
 import Link from "next/link"
+import CookieManager from "@/components/cookie-manager"
 
 export default function Footer() {
   const { t } = useLanguage()
+  const [isCookieManagerOpen, setIsCookieManagerOpen] = useState(false)
 
   const handleScroll = (e, href) => {
     e.preventDefault();
@@ -26,66 +29,77 @@ export default function Footer() {
             <p className="text-slate-300 mb-6 max-w-md">
               {t("footer.companyDescription")}
             </p>
-            <div className="flex space-x-4">
-              <div className="flex items-center space-x-2 text-slate-300">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">{t("contact.info.phone")}</span>
-              </div>
-              <div className="flex items-center space-x-2 text-slate-300">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">{t("contact.info.phone2")}</span>
-              </div>
-            </div>
+
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/#home"
-                  className="text-slate-300 hover:text-white transition-colors"
-                  onClick={(e) => handleScroll(e, '/#home')}
-                >
-                  {t("nav.home")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#about"
-                  className="text-slate-300 hover:text-white transition-colors"
-                  onClick={(e) => handleScroll(e, '/#about')}
-                >
-                  {t("nav.about")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#services"
-                  className="text-slate-300 hover:text-white transition-colors"
-                  onClick={(e) => handleScroll(e, '/#services')}
-                >
-                  {t("nav.services")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contact"
-                  className="text-slate-300 hover:text-white transition-colors"
-                  onClick={(e) => handleScroll(e, '/#contact')}
-                >
-                  {t("nav.contact")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/impressum"
-                  className="text-slate-300 hover:text-white transition-colors">
-                  {t("impressum.title")}
-                </Link>
-              </li>
-            </ul>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+              <div className="space-y-2">
+                <div>
+                  <Link
+                    href="/#home"
+                    className="text-slate-300 hover:text-white transition-colors"
+                    onClick={(e) => handleScroll(e, '/#home')}
+                  >
+                    {t("nav.home")}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href="/#about"
+                    className="text-slate-300 hover:text-white transition-colors"
+                    onClick={(e) => handleScroll(e, '/#about')}
+                  >
+                    {t("nav.about")}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href="/#services"
+                    className="text-slate-300 hover:text-white transition-colors"
+                    onClick={(e) => handleScroll(e, '/#services')}
+                  >
+                    {t("nav.services")}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href="/#contact"
+                    className="text-slate-300 hover:text-white transition-colors"
+                    onClick={(e) => handleScroll(e, '/#contact')}
+                  >
+                    {t("nav.contact")}
+                  </Link>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div>
+                  <Link
+                    href="/impressum"
+                    className="text-slate-300 hover:text-white transition-colors">
+                    {t("impressum.title")}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href="/privacy"
+                    className="text-slate-300 hover:text-white transition-colors">
+                    {t("cookie.privacyPolicy")}
+                  </Link>
+                </div>
+                <div>
+                  <button
+                    onClick={() => setIsCookieManagerOpen(true)}
+                    className="text-slate-300 hover:text-white transition-colors flex items-center space-x-1"
+                  >
+                    <Settings className="h-3 w-3" />
+                    <span>{t("cookieManager.title")}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Contact Info */}
@@ -100,19 +114,20 @@ export default function Footer() {
                 <Mail className="h-4 w-4 text-slate-400" />
                 <span className="text-sm text-slate-300">{t("contact.info.email")}</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-slate-400" />
-                <span className="text-sm text-slate-300">{t("contact.info.email2")}
-                </span>
-              </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-8 pt-8 text-center">
+        <div className="border-t border-slate-800 mt-8 pt-6 text-center">
           <p className="text-slate-400 text-sm">{t("footer.rights")}</p>
         </div>
       </div>
+      
+      {/* Cookie Manager Modal */}
+      <CookieManager 
+        isOpen={isCookieManagerOpen} 
+        onClose={() => setIsCookieManagerOpen(false)} 
+      />
     </footer>
   );
 }
