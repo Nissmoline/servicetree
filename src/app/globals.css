@@ -120,4 +120,22 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Prevent body scroll when cookie consent is open */
+  body.cookie-consent-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+/* Mobile-specific styles for cookie consent */
+@media (max-width: 640px) {
+  .cookie-consent-mobile {
+    padding: 0.5rem;
+  }
+  
+  .cookie-consent-mobile .cookie-content {
+    max-height: calc(100vh - 2rem);
+  }
 }
