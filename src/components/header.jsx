@@ -28,7 +28,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0 mt-6">
             <Link href="/">
-              <Image src="/newLogo.svg" alt="Service Tree Logo" width={84} height={22} priority />
+              <Image src="/logo.svg" alt="Service Tree Logo" width={84} height={22} priority />
             </Link>
           </div>
 

@@ -20,16 +20,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[hsl(200,92%,10%)] text-white py-12">
+    <footer className="bg-[hsl(200,92%,10%)] text-white py-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Service Tree Consulting</h3>
+            <h3 className="text-2xl font-bold mb-4">Service Tree</h3>
             <p className="text-slate-300 mb-6 max-w-md">
               {t("footer.companyDescription")}
             </p>
-
           </div>
 
           {/* Quick Links */}
@@ -118,7 +117,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-8 pt-6 text-center">
+        <div className="border-t border-slate-800 pt-6 pb-4 text-center">
           <p className="text-slate-400 text-sm">{t("footer.rights")}</p>
         </div>
       </div>

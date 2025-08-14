@@ -12,7 +12,7 @@ const translations = {
     "nav.contact": "Contact",
 
     // Hero Section
-    "hero.title": "Service Tree Consulting",
+    "hero.title": "Service Tree",
     "hero.tagline": "Fresh Approach to Customer Service Excellence",
     "hero.description":
       "We're a dynamic new team of 5 dedicated professionals, bringing fresh energy and innovative solutions to call center services and customer support.",
@@ -58,7 +58,7 @@ const translations = {
     "contact.form.submit": "Let's Connect",
 
     // Footer
-    "footer.rights": "© 2025 Service Tree Consulting. Built with passion by our team of 5.",
+    "footer.rights": "© 2025 Service Tree. Built with passion by our team of 5.",
     "footer.companyDescription": "A fresh new Company specializing in customer service excellence. Our team of 5 dedicated professionals is ready to help your business grow with personalized attention and innovative solutions.",
 
     // Cookie Consent
@@ -81,7 +81,7 @@ const translations = {
     "privacy.title": "Privacy Policy",
     "privacy.subtitle": "How we collect, use, and protect your information",
     "privacy.introduction.title": "Introduction",
-    "privacy.introduction.content": "At Service Tree Consulting, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.",
+    "privacy.introduction.content": "At Service Tree, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.",
     "privacy.collection.title": "Information We Collect",
     "privacy.collection.personal.title": "Personal Information",
     "privacy.collection.personal.name": "Name and contact details",
@@ -151,7 +151,7 @@ const translations = {
     // Impressum Page
     "impressum.title": "Impressum",
     "impressum.companyInfo.title": "Company Information",
-    "impressum.companyInfo.name": "Service Tree Consulting",
+    "impressum.companyInfo.name": "Service Tree",
     "impressum.companyInfo.address": "Anakous 31, 14341 Nea Filadelfeia, Greece",
     "impressum.companyInfo.taxId": "Tax ID: Coming Soon",
     "impressum.contact.title": "Contact",
@@ -178,7 +178,7 @@ const translations = {
     "nav.contact": "Kontakt",
 
     // Hero Section
-    "hero.title": "Service Tree Consulting",
+    "hero.title": "Service Tree",
     "hero.tagline": "Frischer Ansatz für Kundenservice-Exzellenz",
     "hero.description":
       "Wir sind ein dynamisches neues Team von 5 engagierten Fachkräften, die frische Energie und innovative Lösungen für Vertrieb, Call-Center-Services und Kundensupport bringen.",
@@ -224,7 +224,7 @@ const translations = {
     "contact.form.submit": "Lassen Sie uns verbinden",
 
     // Footer
-    "footer.rights": "© 2025 Service Tree Consulting. Mit Leidenschaft von unserem 5-köpfigen Team erstellt.",
+    "footer.rights": "© 2025 Service Tree. Mit Leidenschaft von unserem 5-köpfigen Team erstellt.",
     "footer.companyDescription": "Eine frisches neues Unternehmen, spezialisiert auf exzellenten Kundenservice. Unser Team von 5 engagierten Fachleuten ist bereit, Ihrem Unternehmen mit persönlicher Betreuung und innovativen Lösungen zum Wachstum zu verhelfen.",
 
     // Cookie Consent
@@ -247,7 +247,7 @@ const translations = {
     "privacy.title": "Datenschutzerklärung",
     "privacy.subtitle": "Wie wir Ihre Informationen sammeln, verwenden und schützen",
     "privacy.introduction.title": "Einführung",
-    "privacy.introduction.content": "Bei Service Tree Consulting sind wir verpflichtet, Ihre Privatsphäre zu schützen und die Sicherheit Ihrer persönlichen Informationen zu gewährleisten. Diese Datenschutzerklärung erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen.",
+    "privacy.introduction.content": "Bei Service Tree sind wir verpflichtet, Ihre Privatsphäre zu schützen und die Sicherheit Ihrer persönlichen Informationen zu gewährleisten. Diese Datenschutzerklärung erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen.",
     "privacy.collection.title": "Informationen, die wir sammeln",
     "privacy.collection.personal.title": "Persönliche Informationen",
     "privacy.collection.personal.name": "Name und Kontaktdaten",
@@ -317,7 +317,7 @@ const translations = {
     // Impressum Page
     "impressum.title": "Impressum",
     "impressum.companyInfo.title": "Unternehmensinformationen",
-    "impressum.companyInfo.name": "Service Tree Consulting",
+    "impressum.companyInfo.name": "Service Tree",
     "impressum.companyInfo.address": "Anakous 31, 14341 Nea Filadelfeia, Griechenland",
     "impressum.companyInfo.taxId": "Steuernummer: Demnächst verfügbar",
     "impressum.contact.title": "Kontakt",
@@ -344,7 +344,7 @@ const translations = {
     "nav.contact": "Επικοινωνία",
 
     // Hero Section
-    "hero.title": "Service Tree Consulting",
+    "hero.title": "Service Tree",
     "hero.tagline": "Φρέσκια Προσέγγιση στην Αριστεία Εξυπηρέτησης Πελατών",
     "hero.description":
       "Είμαστε μια δυναμική νέα ομάδα 5 αφοσιωμένων επαγγελματιών, που φέρνουμε φρέσκια ενέργεια και καινοτόμες λύσεις στις υπηρεσίες call center και υποστήριξης πελατών.",
@@ -390,7 +390,7 @@ const translations = {
     "contact.form.submit": "Ας Συνδεθούμε",
 
     // Footer
-    "footer.rights": "© 2025 Service Tree Consulting. Δημιουργήθηκε με πάθος από την ομάδα των 5 ατόμων μας.",
+    "footer.rights": "© 2025 Service Tree. Δημιουργήθηκε με πάθος από την ομάδα των 5 ατόμων μας.",
     "footer.companyDescription": "Μια νέα εταιρεία που ειδικεύεται στην αριστεία εξυπηρέτησης πελατών. Η ομάδα μας από 5 αφοσιωμένους επαγγελματίες είναι έτοιμη να βοηθήσει την επιχείρησή σας να αναπτυχθεί με εξατομικευμένη προσοχή και καινοτόμες λύσεις.",
 
     // Cookie Consent
@@ -413,7 +413,7 @@ const translations = {
     "privacy.title": "Πολιτική Απορρήτου",
     "privacy.subtitle": "Πώς συλλέγουμε, χρησιμοποιούμε και προστατεύουμε τις πληροφορίες σας",
     "privacy.introduction.title": "Εισαγωγή",
-    "privacy.introduction.content": "Στην Service Tree Consulting, είμαστε αφοσιωμένοι στην προστασία της ιδιωτικότητάς σας και στη διασφάλιση της ασφάλειας των προσωπικών σας πληροφοριών. Αυτή η Πολιτική Απορρήτου εξηγεί πώς συλλέγουμε, χρησιμοποιούμε, αποκαλύπτουμε και προστατεύουμε τις πληροφορίες σας όταν επισκέπτεστε τον ιστότοπό μας ή χρησιμοποιείτε τις υπηρεσίες μας.",
+    "privacy.introduction.content": "Στην Service Tree, είμαστε αφοσιωμένοι στην προστασία της ιδιωτικότητάς σας και στη διασφάλιση της ασφάλειας των προσωπικών σας πληροφοριών. Αυτή η Πολιτική Απορρήτου εξηγεί πώς συλλέγουμε, χρησιμοποιούμε, αποκαλύπτουμε και προστατεύουμε τις πληροφορίες σας όταν επισκέπτεστε τον ιστότοπό μας ή χρησιμοποιείτε τις υπηρεσίες μας.",
     "privacy.collection.title": "Πληροφορίες που Συλλέγουμε",
     "privacy.collection.personal.title": "Προσωπικές Πληροφορίες",
     "privacy.collection.personal.name": "Όνομα και στοιχεία επικοινωνίας",
@@ -483,7 +483,7 @@ const translations = {
     // Impressum Page
     "impressum.title": "Impressum",
     "impressum.companyInfo.title": "Πληροφορίες Εταιρείας",
-    "impressum.companyInfo.name": "Service Tree Consulting",
+    "impressum.companyInfo.name": "Service Tree",
     "impressum.companyInfo.address": "Ανακους 31, 14341 Νεα Φιλαδελφεια, Ελλάδα",
     "impressum.companyInfo.taxId": "ΑΦΜ: Σύντομα",
     "impressum.contact.title": "Επικοινωνία",

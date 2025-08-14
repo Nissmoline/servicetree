@@ -15,11 +15,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Service Tree Consulting - Fresh Approach to Customer Service Excellence",
-  description: "Service Tree Consulting offers innovative solutions and personalized attention for call center services and customer support. A dynamic team ready to help your business grow.",
-  icons: {
-    icon: '/newLogo.svg',
-  },
+  title: "Service Tree - Fresh Approach to Customer Service Excellence",
+  description: "Service Tree offers innovative solutions and personalized attention for call center services and customer support. A dynamic team ready to help your business grow.",
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/logo96x96.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/logo96x96.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/logo96x96.png',
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
