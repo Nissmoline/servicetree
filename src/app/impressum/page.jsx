@@ -24,8 +24,11 @@ export default function ImpressumPage() {
             <p>
               {t("impressum.companyInfo.address")}
             </p>
-            <p>
+            {/* <p>
               {t("impressum.companyInfo.taxId")}
+            </p> */}
+            <p>
+              {t("impressum.companyInfo.companyNumber")}
             </p>
           </section>
 
